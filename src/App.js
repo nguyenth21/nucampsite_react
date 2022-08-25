@@ -1,15 +1,14 @@
 //import React from 'react';
 import Header from './components/Header.js';
-import CampsitesList from './features/campsites/CampsitesList.js';
-import { CAMPSITES } from './app/shared/CAMPSITES';
 import Footer from './components/Footer';
+import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import './App.css';
 
 function App() {
     return (
         <div className='App'>
             <Header />
-            <CampsitesList campsite={CAMPSITES[0]} />
+            <CampsitesDirectoryPage />
             <Footer />
         </div>
     );
