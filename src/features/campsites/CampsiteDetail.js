@@ -1,6 +1,4 @@
-import { Card, CardImg, CardText, CardBody, Col, Container, Row } from 'reactstrap';
-import CampsitesList from './CampsitesList';
-import { selectRandomCampsite } from './campsitesSlice';
+import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 
 const CampsiteDetail = ({ campsite }) => {
     const { image, name, description } = campsite;
@@ -14,7 +12,7 @@ const CampsiteDetail = ({ campsite }) => {
                 </CardBody>
             </Card>
         </Col>
-    )
+    );
 };
 
 export default CampsiteDetail;
