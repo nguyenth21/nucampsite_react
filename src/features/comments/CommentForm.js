@@ -17,15 +17,15 @@ const CommentForm = ({ campsiteId }) => {
 
   const dispatch = useDispatch();
 
-  const handleSubmit = ( values ) => {
+  const handleSubmit = (values) => {
     const comment = {
       campsiteId: parseInt(campsiteId),
       rating: values.rating,
       author: values.author,
       text: values.commentText,
-      date: new Date(Date.now()).toISOString()
+      date: new Date(Date.now()).toISOString(),
     };
-    console.log('comment:', comment);
+    console.log("comment:", comment);
     dispatch(addComment(comment));
     setModalOpen(false);
   };
